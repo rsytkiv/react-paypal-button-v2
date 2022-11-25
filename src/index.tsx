@@ -36,7 +36,7 @@ export interface PaypalOptions {
     intent?: string,
     commit?: boolean|string,
     vault?: boolean|string,
-    component?: string,
+    components?: string,
     disableFunding?: string,
     disableCard?: string,
     enableFunding?: string,
@@ -81,7 +81,7 @@ class PayPalButton extends React.Component<PayPalButtonProps, PayPalButtonState>
                 PropTypes.bool,
                 PropTypes.string
             ]),
-            component: PropTypes.string,
+            components: PropTypes.string,
             disableFunding: PropTypes.string,
             disableCard: PropTypes.string,
             enableFunding: PropTypes.string,
